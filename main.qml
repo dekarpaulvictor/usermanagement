@@ -11,7 +11,7 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
-import ModioBurn.Tools 1.0
+import UserManager.Tools 1.0
 
 ApplicationWindow {
     width: 720

@@ -25,10 +25,10 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     // Register types here
-    qmlRegisterType<RBACUserManager>("ModioBurn.Tools", 1, 0, "UserManager");
+    qmlRegisterType<RBACUserManager>("UserManager.Tools", 1, 0, "UserManager");
 
-    // Add context properties here
-//    engine.rootContext()->setContextProperty("MoviesModel", initMoviesModel());
+    // Add context properties here, e.g.
+    // engine.rootContext()->setContextProperty("MyAwesomeDataModel", pointerToAwesomeDataModel);
 
     engine.load(QUrl(QLatin1String("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
